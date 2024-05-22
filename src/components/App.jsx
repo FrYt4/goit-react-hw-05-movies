@@ -8,8 +8,6 @@ import css from "../css/app.module.css"
 import styled from 'styled-components';
 
 
-export const App = () => {
-   
   const StyledLink = styled(NavLink)`
   color: black;
   text-decoration: none;
@@ -19,6 +17,10 @@ export const App = () => {
     color: red;
   }
 `;
+
+export const App = () => {
+   
+
   
   return (
    <>
