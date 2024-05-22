@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useLocation} from "react-router-dom";
 import { movieData } from "components/moviedetails";
 import { Link, Outlet } from "react-router-dom";
+import { Loader } from "pages/Loader";
 
 export const MovieDetails = () => {
     const { movieId } = useParams();
@@ -28,7 +29,7 @@ export const MovieDetails = () => {
                     <Outlet />
                 </div>
             ) : (
-                <p>Loading...</p>
+                <Loader/>
             )}
         </div>
     )

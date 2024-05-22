@@ -1,6 +1,7 @@
 import { MovieCastData } from "components/moviecasthook"
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Loader } from "pages/Loader";
 
 export const MovieCast = () => {
     const { movieId } = useParams();
@@ -19,7 +20,7 @@ export const MovieCast = () => {
                 {cast}
             </div>
             ) : (
-            <p>Loading...</p>
+            <p><Loader/></p>
             )}
         </div>
 );
