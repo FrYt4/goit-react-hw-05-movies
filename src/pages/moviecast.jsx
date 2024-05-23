@@ -20,7 +20,7 @@ export const MovieCast = () => {
                 {cast}
             </div>
             ) : (
-            <p><Loader/></p>
+            <Loader/>
             )}
         </div>
 );
